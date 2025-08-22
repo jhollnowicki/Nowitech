@@ -3,50 +3,55 @@ import { Button } from "@/components/ui/button";
 import { SITE, WHATSAPP_MESSAGES } from "@/lib/config";
 
 // Import portfolio images
-import restaurantImage from "@/assets/portfolio/restaurant-mockup.jpg";
-import automotiveImage from "@/assets/portfolio/automotive-mockup.jpg";
-import erpImage from "@/assets/portfolio/erp-mockup.jpg";
-import ecommerceImage from "@/assets/portfolio/ecommerce-mockup.jpg";
+import piva from "@/assets/portfolio/paiva-estetica.png";
+import handmade from "@/assets/portfolio/Handmade.png";
+import Studio from "@/assets/portfolio/Studio.png";
+import nowitech from "@/assets/portfolio/Nowitech.png";
 
 const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "Marmitex Premium",
-      category: "Restaurante",
-      description: "Landing page focada em pedidos pelo WhatsApp. Aumento de 300% nas vendas em 30 dias.",
-      image: restaurantImage,
-      tags: ["Landing Page", "WhatsApp", "Conversão"],
-      color: "neon-green"
+      title: "Paiva Estética Automotiva - Demo",
+      category: "Estética Automotiva",
+      description: "Site institucional moderno e responsivo para clínica automotiva. Foco em apresentação de serviços e captação de clientes.",
+      image: piva, // print real do projeto
+      tags: ["Institucional", "Serviços", "Contato"],
+      color: "neon-purple",
+      url: "https://paivaestetica.netlify.app/"
     },
     {
       id: 2,
-      title: "AutoShine Detailing",
-      category: "Estética Automotiva",
-      description: "Portfólio visual impactante + sistema de agendamento. 50+ novos clientes mensais.",
-      image: automotiveImage,
-      tags: ["Portfólio", "Agendamento", "Galeria"],
-      color: "neon-blue"
+      title: "Handmade Martelinho - Demo",
+      category: "Martelinho de ouro",
+      description: "Landing page institucional moderna com design responsivo e foco em conversão de serviços.",
+      image: handmade, // print real do projeto
+      tags: ["Landing Page", "Institucional", "Conversão"],
+      color: "neon-blue",
+      url: "https://handmademartelinhodeouro.com.br/"
     },
     {
       id: 3,
-      title: "TechSolutions ERP",
-      category: "Serviços B2B",
-      description: "Site institucional + geração de leads qualificados. ROI de 400% em captação.",
-      image: erpImage,
-      tags: ["Institucional", "Lead Gen", "B2B"],
-      color: "neon-purple"
+      title: "Studio Beleza Feminina - Demo",
+      category: "Estúdio de Beleza",
+      description: "Site institucional completo (Home, Serviços, Sobre, Contato) com Google Maps integrado.",
+      image: Studio, // mockup/print de demonstração
+      tags: ["Institucional", "SEO", "Google Maps"],
+      color: "neon-purple",
+      url: "https://studiobelezafeminina.netlify.app/"
     },
     {
       id: 4,
-      title: "Loja Moderna",
-      category: "E-commerce Local",
-      description: "Vitrine digital com catálogo completo. Vendas online cresceram 250%.",
-      image: ecommerceImage,
-      tags: ["E-commerce", "Catálogo", "Vendas"],
-      color: "neon-cyan"
+      title: "Nowitech - Demo",
+      category: "Tecnologia",
+      description: "Exemplo de site institucional criado para demonstração da Nowitech. Ideal para empresas que querem se destacar online.",
+      image: nowitech, // mockup/print bonito
+      tags: ["Institucional", "Demonstração", "Portfólio"],
+      color: "neon-cyan",
+      url: "https://nowitech.netlify.app/"
     }
   ];
+
 
   const handleWhatsAppClick = () => {
     window.open(`${SITE.whatsappUrl}?text=${encodeURIComponent(WHATSAPP_MESSAGES.portfolio)}`, '_blank');
@@ -90,16 +95,20 @@ const Portfolio = () => {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
+
                 {/* Hover Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
                   <Button
+                    asChild
                     variant="outline"
                     className="border-white/20 text-white hover:bg-white/10 backdrop-blur-sm"
                   >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Ver projeto
+                    <a href={project.url} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Ver projeto
+                    </a>
                   </Button>
+
                 </div>
               </div>
 
