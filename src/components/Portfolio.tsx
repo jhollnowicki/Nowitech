@@ -12,7 +12,7 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "Paiva Estética Automotiva - Demo",
+      title: "Paiva Estética Automotiva",
       category: "Estética Automotiva",
       description: "Site institucional moderno e responsivo para clínica automotiva. Foco em apresentação de serviços e captação de clientes.",
       image: piva, // print real do projeto
@@ -22,7 +22,7 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: "Handmade Martelinho - Demo",
+      title: "Handmade Martelinho",
       category: "Martelinho de ouro",
       description: "Landing page institucional moderna com design responsivo e foco em conversão de serviços.",
       image: handmade, // print real do projeto
@@ -32,7 +32,7 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: "Studio Beleza Feminina - Demo",
+      title: "Studio Beleza Feminina",
       category: "Estúdio de Beleza",
       description: "Site institucional completo (Home, Serviços, Sobre, Contato) com Google Maps integrado.",
       image: Studio, // mockup/print de demonstração
@@ -42,7 +42,7 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: "Nowitech - Demo",
+      title: "Nowitech",
       category: "Tecnologia",
       description: "Exemplo de site institucional criado para demonstração da Nowitech. Ideal para empresas que querem se destacar online.",
       image: nowitech, // mockup/print bonito

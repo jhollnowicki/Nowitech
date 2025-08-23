@@ -94,7 +94,7 @@ const Differentials = () => {
           <div className="inline-flex items-center space-x-2 bg-surface/30 backdrop-blur-sm rounded-full px-6 py-3 border border-surface-border glow-soft">
             <div className="w-3 h-3 bg-neon-green rounded-full animate-pulse"></div>
             <span className="text-text-secondary">
-              Atendemos <span className="text-neon-blue font-semibold">{SITE.cidade}</span> e projetos online em todo Brasil
+              <span className="text-neon-blue font-semibold">{SITE.cidade}</span>
             </span>
           </div>
         </div>

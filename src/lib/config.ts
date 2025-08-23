@@ -5,7 +5,7 @@ export const SITE = {
   whatsappUrl: "https://wa.me/5541988866555",
   instagram: "https://instagram.com/nowitech",
   email: "Nowitech.emp@gmail.com",
-  cidade: "Curitiba e toda região metropolitana",
+  cidade: "Prestamos serviços para todo o Brasil",
   url: "https://nowitech.com"
 };
 
