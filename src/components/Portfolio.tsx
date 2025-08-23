@@ -17,7 +17,7 @@ const Portfolio = () => {
       description: "Site institucional moderno e responsivo para clínica automotiva. Foco em apresentação de serviços e captação de clientes.",
       image: piva, // print real do projeto
       tags: ["Institucional", "Serviços", "Contato"],
-      color: "neon-purple",
+      color: "neon-blue",
       url: "https://paivaestetica.netlify.app/"
     },
     {
@@ -37,7 +37,7 @@ const Portfolio = () => {
       description: "Site institucional completo (Home, Serviços, Sobre, Contato) com Google Maps integrado.",
       image: Studio, // mockup/print de demonstração
       tags: ["Institucional", "SEO", "Google Maps"],
-      color: "neon-purple",
+      color: "neon-blue",
       url: "https://studiobelezafeminina.netlify.app/"
     },
     {
@@ -47,7 +47,7 @@ const Portfolio = () => {
       description: "Exemplo de site institucional criado para demonstração da Nowitech. Ideal para empresas que querem se destacar online.",
       image: nowitech, // mockup/print bonito
       tags: ["Institucional", "Demonstração", "Portfólio"],
-      color: "neon-cyan",
+      color: "neon-blue",
       url: "https://nowitech.netlify.app/"
     }
   ];
