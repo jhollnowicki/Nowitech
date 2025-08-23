@@ -1,10 +1,16 @@
 import { ArrowRight, Sparkles, MessageCircle, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SITE, WHATSAPP_MESSAGES } from "@/lib/config";
+import { trackWhatsAppClick } from "@/lib/analytics";
+
 
 const FinalCTA = () => {
   const handleWhatsAppClick = () => {
-    window.open(`${SITE.whatsappUrl}?text=${encodeURIComponent(WHATSAPP_MESSAGES.contact)}`, '_blank');
+    trackWhatsAppClick({ label: "final_cta_main", page: "Home" });
+    window.open(
+      `${SITE.whatsappUrl}?text=${encodeURIComponent(WHATSAPP_MESSAGES.contact)}`,
+      "_blank"
+    );
   };
 
   return (
@@ -84,6 +90,11 @@ const FinalCTA = () => {
                 href={`${SITE.whatsappUrl}?text=${encodeURIComponent(WHATSAPP_MESSAGES.contact)}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  trackWhatsAppClick({ label: "final_cta_card_whatsapp", page: "Home" });
+                  window.open(`${SITE.whatsappUrl}?text=${encodeURIComponent(WHATSAPP_MESSAGES.contact)}`, "_blank");
+                }}
                 className="group grid grid-cols-[48px_1fr] items-center gap-3
                md:grid-cols-[20px_1fr] md:gap-2
                bg-surface/50 backdrop-blur-sm rounded-2xl p-6

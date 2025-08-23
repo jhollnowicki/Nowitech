@@ -1,5 +1,6 @@
 import { MapPin, Mail, MessageCircle, Instagram } from "lucide-react";
 import { SITE } from "@/lib/config";
+import { trackWhatsAppClick } from "@/lib/analytics"; // ⬅️ novo
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,7 +17,6 @@ const Footer = () => {
   const services = [
     "Sites Institucionais",
     "Landing Pages",
-    "E-commerce",
     "Otimização SEO",
     "Design Responsivo",
     "Manutenção Web"
@@ -55,6 +55,15 @@ const Footer = () => {
                 href={`${SITE.whatsappUrl}?text=${encodeURIComponent("Oi, vim pelo site!")}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Falar no WhatsApp"
+                onClick={(e) => {
+                  e.preventDefault();
+                  trackWhatsAppClick({ label: "footer_social_whatsapp", page: "Home" });
+                  window.open(
+                    `${SITE.whatsappUrl}?text=${encodeURIComponent("Oi, vim pelo site!")}`,
+                    "_blank"
+                  );
+                }}
                 className="flex items-center justify-center w-12 h-12 bg-neon-green/20 rounded-full border border-neon-green/30 text-neon-green hover:bg-neon-green/30 hover:glow-green transition-all duration-300 transform hover:scale-110"
               >
                 <MessageCircle className="w-5 h-5" />
@@ -63,6 +72,7 @@ const Footer = () => {
                 href={SITE.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Abrir Instagram"
                 className="flex items-center justify-center w-12 h-12 bg-neon-purple/20 rounded-full border border-neon-purple/30 text-neon-purple hover:bg-neon-purple/30 hover:glow-purple transition-all duration-300 transform hover:scale-110"
               >
                 <Instagram className="w-5 h-5" />
@@ -147,6 +157,15 @@ const Footer = () => {
                   href={`${SITE.whatsappUrl}?text=${encodeURIComponent("Oi, vim pelo site!")}`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Abrir conversa no WhatsApp"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    trackWhatsAppClick({ label: "footer_contact_whatsapp", page: "Home" });
+                    window.open(
+                      `${SITE.whatsappUrl}?text=${encodeURIComponent("Oi, vim pelo site!")}`,
+                      "_blank"
+                    );
+                  }}
                   className="text-text-secondary text-sm hover:text-neon-green transition-colors duration-300"
                 >
                   {SITE.whatsapp}
@@ -168,20 +187,18 @@ const Footer = () => {
             <a href="#" className="hover:text-neon-blue transition-colors duration-300 font-semibold">
               Termos de Uso
             </a>
-          
-          <a
-            href="https://nowitech.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-neon-blue transition-colors duration-300 font-semibold"
-          >
-            Desenvolvido por NOWITECH
-          </a>
-
+            <a
+              href="https://nowitech.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-neon-blue transition-colors duration-300 font-semibold"
+            >
+              Desenvolvido por NOWITECH
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    </footer >
+    </footer>
   );
 };
 
