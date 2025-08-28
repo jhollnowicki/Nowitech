@@ -3,7 +3,7 @@
 
   <!-- Página inicial -->
   <url>
-    <loc>https://nowitech.netlify.app/</loc>
+    <loc>https://www.nowitech.com.br/</loc>
     <lastmod>2025-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
   <!-- Serviços -->
   <url>
-    <loc>https://nowitech.netlify.app/servicos</loc>
+    <loc>https://www.nowitech.com.br/servicos</loc>
     <lastmod>2025-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -19,7 +19,7 @@
 
   <!-- Sobre -->
   <url>
-    <loc>https://nowitech.netlify.app/sobre</loc>
+    <loc>https://www.nowitech.com.br/sobre</loc>
     <lastmod>2025-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -27,7 +27,7 @@
 
   <!-- Contato -->
   <url>
-    <loc>https://nowitech.netlify.app/contato</loc>
+    <loc>https://www.nowitech.com.br/contato</loc>
     <lastmod>2025-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
