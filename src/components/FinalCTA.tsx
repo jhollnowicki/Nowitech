@@ -58,29 +58,34 @@ const FinalCTA = () => {
 
             {/* Main CTA Button */}
             <Button
-              onClick={handleWhatsAppClick}
-              size="lg"
-              className="
-                    w-full sm:w-auto                      
-                    inline-flex items-center justify-center gap-2
-                    rounded-2xl
-                    text-base sm:text-lg md:text-xl      
-                    px-5 py-3 sm:px-8 sm:py-4           
-                    min-h-12                              
-                    bg-gradient-primary text-white border-0
-                    hover:bg-gradient-accent
-                    hover:shadow-2xl
-                    sm:hover:scale-105 hover:scale-100   
-                    transition-all duration-300
-                    mx-auto sm:mx-0                      
-                    max-w-[520px]                          
-                    mb-8
-                  "
-            >
-              <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6" />
-              Fale com um de nossos expecialistas!
-              <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6" />
-            </Button>
+  onClick={handleWhatsAppClick}
+  size="lg"
+  className="
+    w-full sm:w-auto
+    max-w-full sm:max-w-[520px]
+    inline-flex items-center justify-center gap-2
+    rounded-2xl
+    text-sm xs:text-base sm:text-lg md:text-xl      
+    px-4 xs:px-5 sm:px-8
+    py-3 sm:py-4
+    min-h-12
+    bg-gradient-primary text-white border-0
+    hover:bg-gradient-accent hover:shadow-2xl
+    sm:hover:scale-105 hover:scale-100
+    transition-all duration-300
+    mx-auto sm:mx-0
+    mb-8
+    whitespace-normal text-center
+  "
+>
+  <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 shrink-0" />
+  <span className="flex-1 break-words">
+    Fale com um de nossos especialistas!
+  </span>
+  <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 shrink-0" />
+</Button>
+
+
 
 
             {/* Contact Info */}

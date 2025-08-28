@@ -6,7 +6,7 @@ const Pricing = () => {
   const plans = [
     {
       name: "Básico",
-      price: "450",
+      price: "479,99",
       description: "Perfeito para começar sua presença digital",
       icon: Zap,
       color: "neon-blue",
@@ -22,7 +22,7 @@ const Pricing = () => {
     },
     {
       name: "Intermediário",
-      price: "900",
+      price: "799,99",
       description: "Mais vendido - solução completa",
       icon: Star,
       color: "neon-green",
@@ -30,28 +30,38 @@ const Pricing = () => {
         "Até 4 páginas completas",
         "Home + Serviços + Sobre + Contato",
         "Google Maps integrado",
-        "SEO básico otimizado",
+        "SEO otimizado",
         "Formulários de contato",
         "1 semana de ajustes grátis",
-        "Analytics configurado"
+        "Analytics configurado",
+        "Deploy e hospedagem inclusos",
+        "Domínio por 1 ano",
+        "Indexação no Google"
       ],
       highlighted: true,
       badge: "Mais vendido"
     },
     {
       name: "Premium",
-      price: "1.500",
+      price: "1.399,99",
       description: "Para quem quer o máximo impacto",
       icon: Crown,
       color: "neon-purple",
       features: [
+        "Até 4 páginas completas",
+        "Home + Serviços + Sobre + Contato",
+        "Google Maps integrado",
+        "SEO Performático",
         "Sites multi-idioma",
         "Blog integrado",
         "Otimização avançada de SEO",
         "Efeitos e animações premium",
         "Dashboard administrativo",
         "2 semanas de ajustes grátis",
-        "Suporte prioritário por 90 dias"
+        "Suporte prioritário por 90 dias",
+        "Deploy e hospedagem inclusos",
+        "Domínio por 1 ano gratuito",
+        "Indexação no Google"
       ],
       highlighted: false
     }
@@ -172,14 +182,14 @@ const Pricing = () => {
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-neon-green rounded-full animate-pulse"></div>
               <span className="text-text-secondary text-sm">
-                Pagamento em até 3x sem juros
+                Pagamento em até 2x sem juros
               </span>
             </div>
             <div className="w-px h-4 bg-surface-border"></div>
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-neon-blue rounded-full animate-pulse"></div>
               <span className="text-text-secondary text-sm">
-                Nota fiscal e contrato inclusos
+                Contrato do acordo incluso
               </span>
             </div>
           </div>

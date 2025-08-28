@@ -14,7 +14,7 @@ const Portfolio = () => {
       id: 1,
       title: "Paiva Estética Automotiva",
       category: "Estética Automotiva",
-      description: "Site institucional moderno e responsivo para clínica automotiva. Foco em apresentação de serviços e captação de clientes.",
+      description: "Site institucional moderno e responsivo para estética automotiva. Foco em apresentação de serviços e captação de clientes.",
       image: piva, // print real do projeto
       tags: ["Institucional", "Serviços", "Contato"],
       color: "neon-blue",
@@ -33,7 +33,7 @@ const Portfolio = () => {
     {
       id: 3,
       title: "Studio Beleza Feminina",
-      category: "Estúdio de Beleza",
+      category: "Studio de Beleza",
       description: "Site institucional completo (Home, Serviços, Sobre, Contato) com Google Maps integrado.",
       image: Studio, // mockup/print de demonstração
       tags: ["Institucional", "SEO", "Google Maps"],

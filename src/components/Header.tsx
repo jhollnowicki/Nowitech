@@ -34,7 +34,8 @@ const Header = () => {
     ${isScrolled ? 'bg-black/70 backdrop-blur-md' : 'bg-black/55 backdrop-blur-sm'}`}
     >
       {/* altura fixa do header */}
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 h-20 sm:h-24">
+      <div className="container px-4 sm:px-6 lg:px-8 h-20 sm:h-24">
+
         <div className="flex h-full items-center justify-between gap-6">
           {/* Logo (grande) */}
           <a href="#hero" className="flex items-center gap-2 min-w-0 flex-1">
