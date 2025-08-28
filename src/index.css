@@ -235,3 +235,6 @@
       radial-gradient(circle at 75% 75%, hsl(var(--neon-purple) / 0.1) 0%, transparent 50%);
   }
 }
+html {
+  scroll-behavior: smooth;
+}
