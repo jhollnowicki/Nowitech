@@ -1,8 +1,8 @@
 export const SITE = {
   brand: "NOWITECH",
   logo: "/Logo_transparente.png",
-  whatsapp: "41 98886-6555",
-  whatsappUrl: "https://wa.me/5541988866555",
+  whatsapp: "41 98781-3642",
+  whatsappUrl: "https://wa.me/5541987813642",
   instagram: "https://instagram.com/nowitech",
   email: "Nowitech.emp@gmail.com",
   cidade: "Prestamos serviços para todo o Brasil",
