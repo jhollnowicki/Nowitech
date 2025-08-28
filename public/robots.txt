@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://nowitech.netlify.app/sitemap.xml
+Sitemap: https://www.nowitech.com.br/sitemap.xml
