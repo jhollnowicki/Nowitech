@@ -1,5 +1,11 @@
+# NOWITECH - Arquivo robots.txt
 User-agent: *
 Allow: /
+
+# Bloqueios opcionais (mantém o crawl limpo)
+Disallow: /404
+Disallow: /privacidade
+Disallow: /termos
 
 # Sitemap
 Sitemap: https://www.nowitech.com.br/sitemap.xml
