@@ -6,7 +6,7 @@ import { SITE, WHATSAPP_MESSAGES } from "@/lib/config";
 import piva from "@/assets/portfolio/paiva-estetica.png";
 import handmade from "@/assets/portfolio/Handmade.png";
 import Studio from "@/assets/portfolio/Studio.png";
-import nowitech from "@/assets/portfolio/Nowitech.png";
+import sitePd from "@/assets/portfolio/sitePd.png";
 
 const Portfolio = () => {
   const projects = [
@@ -42,13 +42,13 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: "Nowitech",
-      category: "Tecnologia",
-      description: "Exemplo de site institucional criado para demonstração da Nowitech. Ideal para empresas que querem se destacar online.",
-      image: nowitech, // mockup/print bonito
-      tags: ["Institucional", "Demonstração", "Portfólio"],
+      title: "Espaço Amanda Matos",
+      category: "Podologia",
+      description: "Exemplo de site institucional criado para clínicas. Ideal para profissionais da área da saúde que desejam transmitir credibilidade, ampliar sua presença digital e atrair novos pacientes.",
+      image: sitePd, // mockup/print bonito
+      tags: ["Institucional", "Conversão", "Google Maps"],
       color: "neon-blue",
-      url: "https://nowitech.netlify.app/"
+      url: "https://www.amandamatospodologiaesaude.com.br/"
     }
   ];
 

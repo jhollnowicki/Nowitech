@@ -10,8 +10,8 @@ export const SITE = {
 };
 
 export const WHATSAPP_MESSAGES = {
-  hero: "Olá, quero fazer um site com a NOWITECH!",
-  portfolio: "Olá, quero um site como esse!",
-  pricing: "Olá, quero contratar um plano!",
-  contact: "Olá, quero falar sobre um projeto!"
+  hero: "Olá, Quero transformar meu negócio digital com a NOWITECH!",
+  portfolio: "Olá, Quero um design que gera confiança e vendas!",
+  pricing: "Olá, Quero escolher o plano ideal para minha empresa!",
+  contact: "Olá, quero falar com um especialista para transformar meu negócio no meio digital!"
 };
